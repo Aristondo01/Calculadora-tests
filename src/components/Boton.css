@@ -1,0 +1,44 @@
+.boton-gris
+{
+    display: flex;
+    width: 65px;
+    height: 65px;
+    background-color: #20356e;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 0;
+
+}
+
+.boton-naranja
+{
+    display: flex;
+    width: 65px;
+    height: 65px;
+    background-color: #e7622c;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 0;
+}
+
+.texto{
+    display: flex;
+    font-size: 26px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    align-self: center;
+    font-weight: 900;
+    color: white;
+    cursor: pointer;
+}
+
+.contenedor{
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: repeat(4, 65px);
+    grid-gap: 15px;
+    grid-row-gap: 15px;
+    
+}
+

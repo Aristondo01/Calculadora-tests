@@ -1,0 +1,10 @@
+.cuerpo{
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    height: max-content;
+    padding: 30px;
+    background-color: #aaaab1;
+    justify-content: center;
+    border-radius: 10px;
+}
