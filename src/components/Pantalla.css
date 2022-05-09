@@ -1,0 +1,21 @@
+.vidrio{
+    display: flex;
+    height: 65px;
+    width: 305px;
+    background-color: #8ecce6;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+}
+
+.texto-vidrio{
+    display: flex;
+    font-size: 38px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    align-self: center;
+    font-weight: 900;
+    color: white;
+    cursor: pointer;
+    margin-right: 5px;
+}
