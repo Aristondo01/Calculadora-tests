@@ -86,7 +86,6 @@ const Calculadora = () => {
     }, [pantallaview])
 
     const agregarNum = useCallback((num) => {
-        console.log(operacion)
         if ('0123456789'.includes(num)) {
             if (operacion[1] === '' && `${operacion[0]}`.length < 9) {
                 setOperacion([operacion[0] + num, '', '', false])
