@@ -8,6 +8,7 @@ const Calculadora = () => {
     const [operacion, setOperacion] = useState(['', '', '', false])
 
     const calcular = () => {
+        console.log(operacion)
         if (operacion[3] && operacion[0] !== '' && operacion[2] !== '') {
             if (operacion[1] === '-') {
                 const respuesta = parseFloat(operacion[0], 10) - parseFloat(operacion[2], 10)
@@ -121,8 +122,9 @@ const Calculadora = () => {
                 setOperacion([-1 * parseFloat(operacion[0], 10), operacion[1], '', false, num])
                 setPantalla((-1 * parseFloat(operacion[0], 10)).toString())
             } else {
-                setOperacion([operacion[0], operacion[1], `-${operacion[1]}`, false, num])
-                setPantalla((-1 * parseFloat(operacion[2], 10)).toString())
+                const num2=(-1 * parseFloat(operacion[2], 10)).toString()
+                setOperacion([operacion[0], operacion[1], `${num2}`, false, num])
+                setPantalla(num2)
             }
         }
     }, [operacion])
