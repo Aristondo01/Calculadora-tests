@@ -7,7 +7,7 @@ const Calculadora = () => {
     const [pantallaview, setPantalla] = useState('')
     const [operacion, setOperacion] = useState(['', '', '', false])
 
-    const Calcular = () => {
+    const calcular = () => {
         if (operacion[3] && operacion[0] !== '' && operacion[2] !== '') {
             if (operacion[1] === '-') {
                 const respuesta = parseFloat(operacion[0], 10) - parseFloat(operacion[2], 10)
@@ -82,7 +82,7 @@ const Calculadora = () => {
     }
 
     useEffect(() => {
-        Calcular()
+        calcular()
     }, [pantallaview])
 
     const agregarNum = useCallback((num) => {

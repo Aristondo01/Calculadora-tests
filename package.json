@@ -6,7 +6,8 @@
   "scripts": {
     "start": "webpack-dev-server",
     "build": "webpack",
-    "lint": "eslint src/**"
+    "lint": "eslint src/**",
+    "test": "jest"
   },
   "author": "Sebastian Aristondo",
   "license": "ISC",
@@ -14,9 +15,6 @@
     "@babel/cli": "^7.17.10",
     "@babel/core": "^7.17.10",
     "@babel/plugin-transform-regenerator": "^7.17.9",
-    "@babel/plugin-transform-runtime": "^7.17.0",
-    "@babel/preset-env": "^7.16.11",
-    "@babel/preset-react": "^7.16.7",
     "@emotion/babel-preset-css-prop": "^11.2.0",
     "@emotion/react": "^11.9.0",
     "babel-loader": "^8.2.4",
@@ -32,6 +30,12 @@
     "webpack-node-externals": "^3.0.0"
   },
   "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.17.10",
+    "@babel/preset-env": "^7.17.10",
+    "@babel/preset-react": "^7.16.7",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.2.0",
+    "@testing-library/user-event": "^14.2.0",
     "css-loader": "^6.7.1",
     "eslint": "^8.15.0",
     "eslint-config-airbnb": "^19.0.4",
@@ -39,6 +43,8 @@
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.5.0",
+    "jest": "^28.1.0",
+    "jest-environment-jsdom": "^28.1.0",
     "style-loader": "^3.3.1"
   }
 }
